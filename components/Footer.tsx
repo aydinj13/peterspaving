@@ -11,7 +11,7 @@ function Footer() {
 				<div className="p-5 ">
 					<ul>
 						<p className="text-gray-800 font-bold text-3xl pb-6">
-							Peter&apos;s<span className="text-indigo-600">{" "}Paving</span>
+							<span className="text-indigo-600">Peter&apos;s</span><span className="text-green-500">{" "}Paving</span>
 						</p>
 						<div className="flex gap-6 pb-5">
 							<FaInstagram className="text-2xl cursor-pointer hover:text-yellow-600" />
@@ -24,28 +24,28 @@ function Footer() {
 				<div className="p-5">
 					<ul>
 						<p className="text-gray-800 font-bold text-2xl pb-4">Services</p>
-						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
 							Driveways
 						</li>
-                        <li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+                        <li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
 							Patios
 						</li>
-                        <li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+                        <li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
 							Porches
 						</li>
-                        <li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+                        <li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
 							Pathways
 						</li>
-                        <li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+                        <li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
 							Wash & Seal
 						</li>
-                        <li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+                        <li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
 							Interlock Repairs
 						</li>
-                        <li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+                        <li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
 							Hardscaping
 						</li>
-                        <li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+                        <li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
 							Retaining Wall
 						</li>
 					</ul>
@@ -53,19 +53,19 @@ function Footer() {
 				<div className="p-5">
 					<ul>
 						<p className="text-gray-800 font-bold text-2xl pb-4">Blog</p>
-						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
 							Post #1
 						</li>
-						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
 							Post #2
 						</li>
-						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
 							Post #3
 						</li>
-						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
 							Post #4
 						</li>
-						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
 							Post #5
 						</li>
 					</ul>
@@ -73,7 +73,7 @@ function Footer() {
 				<div className="p-5">
 					<ul>
 						<p className="text-gray-800 font-bold text-2xl pb-4">Contact</p>
-						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
 							Contact Us
 						</li>
 						
@@ -82,7 +82,7 @@ function Footer() {
 			</div>
 			<div className="flex flex-col justify-center items-center text-center  p-5 bg-gray-50">
 				<h1 className=" text-gray-800 font-semibold">
-					© 2024 Peter&apos;s Paving CA. All Rights Reserved. | Powered by Croduct Web Design
+					© 2024 Peter&apos;s Paving CA. All Rights Reserved. | <a href="https://croduct.com"><span className="text-indigo-600"><u>Powered by Croduct Web Design</u></span></a>
 			
 				</h1>
 			</div>
