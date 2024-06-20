@@ -34,7 +34,7 @@ export default function Navbar() {
 
                 <div className="hidden md:flex gap-8 mr-5 font-medium">
                 {navigation.map((item) => (
-                <a href={item.link}>{item.name}</a>
+                <a key={item.name} href={item.link}>{item.name}</a>
               ))}
                 </div>
             </div>
