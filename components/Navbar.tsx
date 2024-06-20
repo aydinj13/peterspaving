@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 
 export default function Navbar() {
   const navigation = [
-    { name: "Home", link: "/" },
+    { name: "Home", link: "" },
     { name: "Services", link: "services" },
     { name: "Blog", link: "blog" },
     { name: "Contact", link: "contact" }
@@ -19,7 +19,7 @@ export default function Navbar() {
     <nav className="flex filter drop-shadow-md bg-white px-4 py-4 h-20 items-center">
       <div className="w-3/12 flex items-center">
         <a className="text-2xl font-semibold" href="/">
-          <img src="logo.png" className="h-20 w-30" />
+          <img src="/logo.png" className="h-20 w-30" />
         </a>
       </div>
       <div className="w-9/12 flex justify-end items-center">

@@ -24,30 +24,46 @@ function Footer() {
 				<div className="p-5">
 					<ul>
 						<p className="text-gray-800 font-bold text-2xl pb-4">Services</p>
+                        <a href="/services/driveways">
 						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
 							Driveways
 						</li>
-                        <li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
+                        </a>
+                        <a href="/services/patios">
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
 							Patios
 						</li>
-                        <li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
+                        </a>
+                        <a href="/services/porches">
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
 							Porches
 						</li>
-                        <li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
+                        </a>
+                        <a href="/services/pathways">
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
 							Pathways
 						</li>
-                        <li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
+                        </a>
+                        <a href="/services/wash-and-seal">
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
 							Wash & Seal
 						</li>
-                        <li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
+                        </a>
+                        <a href="/services/interlock-repairs">
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
 							Interlock Repairs
 						</li>
-                        <li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
+                        </a>
+                        <a href="/services/hardscaping">
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
 							Hardscaping
 						</li>
-                        <li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
+                        </a>
+                        <a href="/services/retaining-wall">
+						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
 							Retaining Wall
 						</li>
+                        </a>
 					</ul>
 				</div>
 				<div className="p-5">
