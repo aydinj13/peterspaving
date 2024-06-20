@@ -11,7 +11,7 @@ function Footer() {
 				<div className="p-5 ">
 					<ul>
 						<p className="text-gray-800 font-bold text-3xl pb-6">
-							Peter's<span className="text-indigo-600">{" "}Paving</span>
+							Peter&apos;s<span className="text-indigo-600">{" "}Paving</span>
 						</p>
 						<div className="flex gap-6 pb-5">
 							<FaInstagram className="text-2xl cursor-pointer hover:text-yellow-600" />
@@ -82,7 +82,7 @@ function Footer() {
 			</div>
 			<div className="flex flex-col justify-center items-center text-center  p-5 bg-gray-50">
 				<h1 className=" text-gray-800 font-semibold">
-					© 2024 Peter's Paving CA. All Rights Reserved. | Powered by Croduct Web Design
+					© 2024 Peter&apos;s Paving CA. All Rights Reserved. | Powered by Croduct Web Design
 			
 				</h1>
 			</div>
