@@ -17,6 +17,7 @@ import { Input } from "@/components/ui/input"
 import Footer from "@/components/Footer"
 import Navbar from "@/components/Navbar"
 import { Textarea } from "@/components/ui/textarea"
+import Banner from "@/components/Banner"
 
 // Define the schema with the required fields and validation rules
 const formSchema = z.object({
@@ -45,6 +46,7 @@ export default function Contact() {
 
   return (
     <div>
+      <Banner />
       <Navbar />
       <div className="p-10 m-10">
         <h2 className="font-bold text-center text-3xl m-10">Contact Us</h2>
