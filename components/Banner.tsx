@@ -1,6 +1,6 @@
 export default function Banner() {
     return (
-      <div className="relative isolate flex items-center gap-x-6 overflow-hidden px-6 py-2.5 sm:px-3.5 sm:before:flex-1" style={{ backgroundColor: '#7F79F7' }}>
+      <div className="relative isolate flex items-center gap-x-6 overflow-hidden px-6 py-2.5 sm:px-3.5 sm:before:flex-1" style={{ backgroundColor: "#6736FA" }}>
         <div
           className="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
           aria-hidden="true"
@@ -26,7 +26,12 @@ export default function Banner() {
           />
         </div>
         <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-            <p className="text-sm leading-6 text-gray-900 font-semibold">Get a quote today!</p>
+        <p className="text-sm leading-6 text-white font-semibold">
+          <a href="mailto:info@peterspaving.ca"><span className="font-medium"><u>info@peterspaving.ca</u> - </span></a>
+            <a href="/contact">
+            Get a quote today!
+            </a>
+          </p>
            
 
         </div>
