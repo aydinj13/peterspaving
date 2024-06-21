@@ -90,7 +90,8 @@ export default function ContactForm() {
                   className="input w-full input-bordered input-primary rounded-md p-3 border border-gray-300 focus:ring-2 focus:ring-indigo-500"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
-                  type="text"
+                  type="tel"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                   placeholder="(111)111-1111"
                   required
                 />
