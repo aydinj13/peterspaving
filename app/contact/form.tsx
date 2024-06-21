@@ -10,6 +10,7 @@ export default function ContactForm() {
   const [isSubmitted, setSubmitted] = useState(false)
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
+  const [phone, setPhone] = useState('')
   const [message, setMessage] = useState('')
 
   const onSubmit = async (e: FormEvent) => {
@@ -21,6 +22,7 @@ export default function ContactForm() {
         body: JSON.stringify({
           name,
           email,
+          phone,
           message,
         }),
         headers: {
@@ -44,9 +46,10 @@ export default function ContactForm() {
       <div className="flex-grow flex flex-col items-center justify-center p-12 bg-gradient-to-r from-indigo-300 to-indigo-400">
         {isSubmitted ? (
           <div className="text-center">
-            <h1 className="text-4xl font-bold text-green-600 mb-4">
+            <h1 className="text-4xl font-bold text-white mb-4">
               Thank you for your message!
             </h1>
+            <p className="text-md leading-6 text-white font-semibold">View our <a href="/blog" className="font-semibold"><u>Blog</u></a></p>
             <Confetti />
           </div>
         ) : (
@@ -55,7 +58,7 @@ export default function ContactForm() {
             <form onSubmit={onSubmit} className="flex flex-col gap-6">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Full Name
+                  Full Name<span className="text-red-500">*</span>
                 </label>
                 <input
                   className="input w-full input-bordered input-primary rounded-md p-3 border border-gray-300 focus:ring-2 focus:ring-indigo-500"
@@ -68,7 +71,7 @@ export default function ContactForm() {
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Email
+                  Email<span className="text-red-500">*</span>
                 </label>
                 <input
                   className="input w-full input-bordered input-primary rounded-md p-3 border border-gray-300 focus:ring-2 focus:ring-indigo-500"
@@ -81,7 +84,20 @@ export default function ContactForm() {
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Message
+                  Phone Number<span className="text-red-500">*</span>
+                </label>
+                <input
+                  className="input w-full input-bordered input-primary rounded-md p-3 border border-gray-300 focus:ring-2 focus:ring-indigo-500"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                  type="text"
+                  placeholder="(111)111-1111"
+                  required
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  Message<span className="text-red-500">*</span>
                 </label>
                 <textarea
                   className="textarea w-full textarea-primary rounded-md p-3 border border-gray-300 focus:ring-2 focus:ring-indigo-500"
@@ -98,6 +114,7 @@ export default function ContactForm() {
           </div>
         )}
       </div>
+      <Footer />
     </div>
   )
 }

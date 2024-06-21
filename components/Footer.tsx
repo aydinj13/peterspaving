@@ -14,7 +14,7 @@ function Footer() {
 							<span className="text-indigo-600">Peter&apos;s</span><span className="text-green-500">{" "}Paving</span>
 						</p>
 						<div className="flex gap-6 pb-5">
-							<FaInstagram className="text-2xl cursor-pointer hover:text-yellow-600" />
+							<a href="https://www.instagram.com/peterspaving.ca/"><FaInstagram className="text-2xl cursor-pointer hover:text-yellow-600" /></a>
 							<FaTwitter className="text-2xl cursor-pointer hover:text-blue-600" />
 							<FaLinkedin className="text-2xl cursor-pointer hover:text-blue-600" />
 							<FaYoutube className="text-2xl cursor-pointer hover:text-red-600" />
@@ -89,9 +89,11 @@ function Footer() {
 				<div className="p-5">
 					<ul>
 						<p className="text-gray-800 font-bold text-2xl pb-4">Contact</p>
+						<a href="/contact">
 						<li className="text-gray-500 text-md pb-2 font-semibold hover:text-indigo-600 cursor-pointer">
 							Contact Us
 						</li>
+						</a>
 						
 					</ul>
 				</div>

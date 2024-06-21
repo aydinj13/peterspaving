@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
@@ -12,8 +12,12 @@ export default function Navbar() {
   ];
 
   const [open, setOpen] = useState(false);
+  const router = useRouter();
 
-  const router = useRouter()
+  const handleNavigation = (link: string) => {
+    router.push(`/${link}`);
+    setOpen(false);
+  }
 
   return (
     <nav className="flex filter drop-shadow-md bg-white px-4 py-4 h-20 items-center">
@@ -25,9 +29,7 @@ export default function Navbar() {
       <div className="w-9/12 flex justify-end items-center">
         <div
           className="z-50 flex relative w-8 h-8 flex-col justify-between items-center md:hidden"
-          onClick={() => {
-            setOpen(!open);
-          }}
+          onClick={() => setOpen(!open)}
         >
           {/* hamburger button */}
           <span
@@ -52,9 +54,9 @@ export default function Navbar() {
       <div className={`absolute top-20 left-0 w-full bg-white transition-transform duration-300 ease-in-out ${open ? "transform translate-x-0" : "transform -translate-x-full"} md:hidden`}>
         <div className="flex flex-col items-center py-4">
           {navigation.map((item) => (
-            <a key={item.name} href={item.link} className="py-2 text-lg font-medium" onClick={() => setOpen(false)}>
+            <button key={item.name} onClick={() => handleNavigation(item.link)} className="py-2 text-lg font-medium">
               {item.name}
-            </a>
+            </button>
           ))}
         </div>
       </div>
