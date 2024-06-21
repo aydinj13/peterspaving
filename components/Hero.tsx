@@ -34,7 +34,7 @@ export default function Hero() {
             
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="#"
+                href="/contact"
                 className="rounded-md bg-gradient-to-r from-indigo-600 to-indigo-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
               >
                 Get a FREE Quote

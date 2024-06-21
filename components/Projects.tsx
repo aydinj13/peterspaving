@@ -21,7 +21,7 @@ export default function Projects() {
   return (
     <div>
       <h2 className="font-bold text-center text-3xl m-10">Services We Offer</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-5 gap-5 mb-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 p-5 gap-5 mb-5">
         {services.map((service) => (
           <Card key={service.id} className="flex flex-col justify-between">
             <CardHeader className="flex-row gap-4 items-center">
