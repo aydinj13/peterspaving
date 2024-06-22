@@ -84,15 +84,15 @@ export default function ContactForm() {
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Phone Number<span className="text-red-500">*</span>
+                  Phone Number (CA)<span className="text-red-500">*</span>
                 </label>
                 <input
                   className="input w-full input-bordered input-primary rounded-md p-3 border border-gray-300 focus:ring-2 focus:ring-indigo-500"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   type="tel"
-                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                  placeholder="(111)111-1111"
+                  pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                  placeholder="XXX-XXX-XXXX"
                   required
                 />
               </div>
