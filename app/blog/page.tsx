@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import Link from 'next/link';
-import { Post } from '@/type/types';
+import { Post } from '@/types/types';
 
 const getPosts = (): Post[] => {
   const files = fs.readdirSync('posts');
